@@ -1,0 +1,28 @@
+ .navbar-default {
+    background-color: #0066CC;
+    border-color: #1072D3;
+    color: #FFF!important;
+}
+
+.panel-default > .panel-heading, .btn-primary {
+    color: #FFF;
+    background-color: #0066CC;
+    border-color: #ddd;
+}
+
+
+    .btn-primary:hover {
+    background-color: #ddd;
+    border-color: #ddd; 
+    color: #0066CC;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #104981;
+}
+
+a:hover, a:focus {
+    color: #104981;
+}
