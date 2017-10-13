@@ -32,9 +32,15 @@
                     </button>
 
                     <!-- Branding Image -->
+                    @guest
                     <a class="navbar-brand" href="{{ url('/') }}">
                         REPORTS |
                     </a>
+                    @else
+                    <a class="navbar-brand" href="{{ url('/helloworld') }}">
+                        REPORTS |
+                    </a>
+                    @endguest
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -82,6 +88,8 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
